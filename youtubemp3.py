@@ -61,16 +61,3 @@ for video in videos:
     except:
         print("problem with {} (erasing)".format(video))
 
-
-
-
-
-
-
-# ###
-# # manually
-#
-# url = "https://www.youtube.com/watch?v=S1g4Uoqhhc8"
-# print(YouTube(url).title)
-# _filename = input("Filename: ")
-# YouTube(url).streams.first().download(filename=_filename)
