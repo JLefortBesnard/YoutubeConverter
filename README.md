@@ -1,2 +1,2 @@
 # YoutubeConverter
-Dowload youtube video, convert into mp3, delete video
+Dowload youtube video, convert video into mp3, delete downloaded video
