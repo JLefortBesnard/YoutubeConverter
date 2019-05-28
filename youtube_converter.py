@@ -10,7 +10,6 @@ Author:
 # Library we need
 from pytube import YouTube
 import os
-import subprocess
 import time
 import moviepy.editor as mp
 import glob
