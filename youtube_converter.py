@@ -13,7 +13,6 @@ import os
 import subprocess
 import time
 import moviepy.editor as mp
-from IPython import get_ipython
 import glob
 from sys import platform
 
