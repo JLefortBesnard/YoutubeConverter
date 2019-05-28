@@ -44,7 +44,7 @@ class path_changer:
             path = input(">")
             new_path = os.path.join(path, "music")
             if not os.path.exists(new_path):
-                os.makedirs(path)
+                os.makedirs(new_path)
             os.chdir(new_path)
         wd_updated = os.getcwd()
         print("***")
