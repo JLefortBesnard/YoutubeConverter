@@ -40,8 +40,9 @@ class path_changer:
                 os.makedirs(path)
             os.chdir(path)
         else:
-            print("define new path (e.g., User\\Desktop). An empty folder named music will be created there")
+            print("define new complete path (e.g., User\\Desktop). An empty folder named music will be created there")
             path = input(">")
+            os.chdir("../../../../../../..") # Reset your path
             new_path = os.path.join(path, "music")
             if not os.path.exists(new_path):
                 os.makedirs(new_path)
