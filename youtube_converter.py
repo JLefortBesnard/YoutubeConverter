@@ -89,7 +89,7 @@ class Downloader:
             print("Video Downloaded")
         except:
             print("problem with {} (downloading)".format(title))
-            print("URL was {}: ".format(self.url))
+            print("URL was: {}".format(self.url))
         time.sleep(2)
 
 
@@ -152,7 +152,10 @@ class YouTube_converter:
     def _process_(self):
         for int, url in enumerate(self.urls):
             Downloader(url).download()
-            video_downloaded = glob.glob("*.mp4")[0]
+            try:
+                video_downloaded = glob.glob("*.mp4")[0]
+            except:
+                video_downloaded = "No video found"  
             Converter(video_downloaded).convert()
             Eraser(video_downloaded).erase()
             print(" "* 15)
