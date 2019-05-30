@@ -170,7 +170,7 @@ class YouTube_converter:
 # launch the program
 YouTube_converter()._process_()
 
-print("Comvert more videos? (type 0 to continue converting)")
+print("Convert more videos? (type 0 to continue converting)")
 input = input(">")
 while input == "0":
     print("Alright let's do it again, check out if all urls were converted")
