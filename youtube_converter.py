@@ -173,7 +173,7 @@ YouTube_converter()._process_()
 print("Comvert more videos? (type 0 to continue converting)")
 input = input(">")
 while input == "0":
-    print("Alright let's do it again, check out if all urls were converted"
+    print("Alright let's do it again, check out if all urls were converted")
     print("If there is any problem, try closing your terminal and rerunning the program")
     input("press enter to continue")      
     YouTube_converter()._process_()
