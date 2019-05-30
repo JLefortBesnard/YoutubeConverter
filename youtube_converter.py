@@ -89,7 +89,7 @@ class Downloader:
             print("Video Downloaded")
         except:
             print("problem with {} (downloading)".format(title))
-            stop
+            print("URL was {}: ".format(self.url))
         time.sleep(2)
 
 
@@ -112,7 +112,7 @@ class Converter:
             clip.reader.close()
         except:
             print("problem with {} (converting)".format(self.video))
-            stop
+            
 
 
 # erase the downloaded mp4 youtube video
@@ -129,7 +129,6 @@ class Eraser:
             print("Video deleted")
         except:
             print("problem with {} (erasing)".format(self.video))
-            stop
 
 
 # Whole procedure including
