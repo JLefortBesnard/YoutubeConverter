@@ -93,6 +93,7 @@ class Downloader:
         time.sleep(2)
 
 
+
 # convert a youtube video into mp3
 class Converter:
     def __init__(self, video):
@@ -170,11 +171,14 @@ class YouTube_converter:
 # launch the program
 YouTube_converter()._process_()
 
-print("Convert more videos? (type 0 to continue converting)")
-input = input(">")
-while input == "0":
-    print("Alright let's do it again, check out if all urls were converted")
-    print("If there is any problem, try closing your terminal and rerunning the program")
-    input("press enter to continue")      
-    YouTube_converter()._process_()
+# print("Convert more videos? (type 0 to continue converting)")
+# keepgoing = input(">")
+
+# while keepgoing == "0":
+#     print("Alright let's do it again, check out if all urls were converted")
+#     print("If there is any problem, try closing your terminal and rerunning the program")
+#     time.sleep(2)
+#     print("Starting very soon...")
+#     time.sleep(1)      
+#     YouTube_converter()._process_()
         
