@@ -161,7 +161,7 @@ class YouTube_converter:
             print(" "* 15)
             done = int + 1
             remain = len(self.urls)
-            print("...DONE {} / REMAINING {}...".format(done, remain))
+            print("...DONE {} / TOTAL {}...".format(done, remain))
             print(" "* 15)
 
 
