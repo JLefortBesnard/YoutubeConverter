@@ -147,9 +147,7 @@ class YouTube_converter:
     => title_short = title[:10]
     """
     def __init__(self, my_url_list):
-        clear_screen()
         self.urls = my_url_list
-        clear_screen()
 
     def _process_(self):
         for int, url in enumerate(self.urls):
@@ -167,6 +165,7 @@ class YouTube_converter:
             print(" "* 15)
 
 # launch the program
+clear_screen()
 choice = input("Add youtube urls one by one (1) or paste a list (2)?")
 if choice == "1":
     my_url_list = list_urls().add_unique_url()
