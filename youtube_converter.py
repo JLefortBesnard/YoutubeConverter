@@ -192,6 +192,5 @@ while go == "0":
         my_url_list = list_urls().add_urls_list()
 
     YouTube_converter(my_url_list)._process_()
+    print("Convert more videos (Ctrl + C to stop the program")
 
-    print("Convert more videos? (type 0 to continue converting)")
-    go = input(">")
