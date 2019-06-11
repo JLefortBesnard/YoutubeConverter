@@ -13,6 +13,7 @@ import time
 import moviepy.editor as mp
 import glob
 from sys import platform
+import youtube_dl
 
 # clear the terminal screen to make process clearer and more readable
 def clear_screen():
@@ -94,11 +95,13 @@ def download(url):
         YouTube(url).streams.first().download(filename=title_short)
         print("Video Downloaded")
     except:
-        print("!!!!!!!!!!problem with {} (downloading)!!!!!!!!!!".format(title_short))
-        print("URL was: {}".format(url))
+        print("method 1 failed, trying method 2")
+        try:
+            youtube_dl.YoutubeDL().download([url])
+        except:
+            print("!!!!!!!!!!problem with {} (downloading)!!!!!!!!!!".format(title_short))
+            print("URL was: {}".format(url))
     time.sleep(2)
-
-
 
 # convert a youtube video into mp3
 class video:
