@@ -14,14 +14,6 @@ import glob
 from sys import platform
 
 
-# clear the terminal screen to make process clearer and more readable
-def clear_screen():
-    if platform == "win32":
-        os.system('cls')
-    else:
-        os.system('clear')
-        
-
 # convert a youtube video into mp3
 class video:
     def __init__(self, video):
@@ -56,6 +48,7 @@ class video:
 
 
 for int, mp4_file in enumerate(glob.glob("*.mp4")):
+     print("Doing file {}/{}".format(int, len(glob.glob("*.mp4"))))
      try:
         video(mp4_file).convert()
         video(mp4_file).erase()
