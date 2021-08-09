@@ -1,5 +1,5 @@
 """
-Download Youtube video and convert them into mp3 
+Download Youtube video and convert them into mp3 through a user interface
 
 Author:
         Jeremy Lefort-Besnard   jlefortbesnard (at) tuta (dot) io
@@ -12,7 +12,7 @@ import glob
 import os
 
 class YoutubeApp:
-    """Create an user interface to ease the process 
+    """Create a user interface to ease the process 
     of downloading and converting Youtube videos
     to mp3
 
@@ -125,7 +125,7 @@ class YoutubeApp:
         self.check_result()
 
             
-# afficher
+# launch the program
 app = YoutubeApp()
 app.window.mainloop()
 
