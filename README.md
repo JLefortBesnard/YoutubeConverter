@@ -1,5 +1,5 @@
 # YoutubeConverter
-Dowload and convert video into mp3 with the help of a user interface
+Dowload and convert video into mp3 with the help of a user interface 
 
 This code creates a user interface to ease the process of downloading and converting Youtube videos to mp3
 
@@ -12,4 +12,6 @@ Wait a few seconds and the file will be stored in your current directory
 Remember to upgrade the packages from time to time (e.g., pip install youtube_dl --upgrade)
 
 Feel free to clone, pull request or contact me for help
+
+More help: http://losangebleu.site/public/webpages/youtube_conv.php
    
