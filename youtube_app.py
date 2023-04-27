@@ -78,12 +78,17 @@ class YoutubeApp:
         if self.info_dict != 'None':
             self.path = self.info_dict['title'] + '-' + self.info_dict['display_id'] + '.mp3'
             self.path1 = self.info_dict['title'] + '-' + self.info_dict['display_id'] + '.webm'
+            self.path2 = self.info_dict['title'] + '-' + self.info_dict['display_id'] + '.mp4'
             for root, dirs, files in os.walk(os.getcwd()):
                 if self.path in files:
                     result = "download SUCCEED"
                     self.label.config(text = "Operation = " + result, font=("Courrier", 15), bg=self.bg_color,
                             fg='green')
                 elif self.path1 in files:
+                    result = "download SUCCEED"
+                    self.label.config(text = "Operation = " + result, font=("Courrier", 15), bg=self.bg_color,
+                            fg='green')
+                elif self.path2 in files:
                     result = "download SUCCEED"
                     self.label.config(text = "Operation = " + result, font=("Courrier", 15), bg=self.bg_color,
                             fg='green')
@@ -100,9 +105,13 @@ class YoutubeApp:
 
 
     def create_youtube_button(self):
-        yt_button = Button(self.frame, text="Download and convert", font=("Courrier", 25), bg='white', fg=self.bg_color,
+        yt_button1 = Button(self.frame, text="Download and convert", font=("Courrier", 16), bg='white', fg=self.bg_color,
                            command=self.converter)
-        yt_button.pack(pady=25, fill=X)
+        yt_button2 = Button(self.frame, text="Delete noise", font=("Courrier", 16), bg='white', fg=self.bg_color,
+                           command=self.deleter)
+
+        yt_button1.pack(pady=25, fill=X)
+        yt_button2.pack(pady=25, fill=X)
 
 
     def converter(self):
@@ -127,6 +136,15 @@ class YoutubeApp:
             except:
                 self.info_dict = "None"
         self.check_result()
+
+    def deleter(self):
+        for song in glob.glob("*"):
+            if song[-4:] in ["webm", ".m4a"]:
+                os.remove(song)
+        self.label.config(text = "Deleting noise DONE", font=("Courrier", 15), bg=self.bg_color,
+                            fg='green')
+        self.label.pack()
+
 
             
 # afficher
