@@ -9,9 +9,12 @@ and click the 'download and convert' button to start the process
 
 Wait a few seconds and the file will be stored in your current directory
 
+Click the "Delete noise" button to delete .mp4 or .webm files that were also downloaded
+
 Remember to upgrade the packages from time to time (e.g., pip install youtube_dl --upgrade)
+ffmpeg is also required
 
 Feel free to clone, pull request or contact me for help
 
-More help: http://losangebleu.site/public/webpages/youtube_conv.php
+More help: http://box5887.temp.domains/~losangeb/public/webpages/youtube_conv.php
    
