@@ -1,6 +1,9 @@
 # YoutubeConverter
-Dowload and convert video into mp3 with the help of a user interface 
-<img src="app_screen_shot.png" alt="screenshot app" height="300"/>
+
+<img src="app_screen_shot.png" alt="screenshot app"/>
+
+### Dowload and convert video into mp3 with the help of a user interface
+
 This code creates a user interface to ease the process of downloading and converting Youtube videos to mp3
 
 Once you lauch the script, the user interface will appear, 
