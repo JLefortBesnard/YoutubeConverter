@@ -16,5 +16,5 @@ ffmpeg is also required
 
 Feel free to clone, pull request or contact me for help
 
-More help: http://box5887.temp.domains/~losangeb/public/webpages/youtube_conv.php
+More help: https://jlefortbesnard.github.io/Structure/blog/youtube_conv.html
    
